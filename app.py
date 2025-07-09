@@ -1,12 +1,20 @@
 import streamlit as st
 
-st.set_page_config(page_title="Vitiligo Tracker", layout="centered")
+# Page configuration
+st.set_page_config(
+    page_title="Vitiligo Tracker",
+    page_icon="🌿",
+    layout="centered"
+)
 
+# Custom Cover Page
 st.markdown(
     """
-    <div style="text-align:center;">
-        <h1 style="color:#4CAF50;">🌿 Vitiligo Tracker</h1>
-        <p>A simple lifestyle and diet tracker built with ❤️ using Streamlit</p>
+    <div style='text-align: center; padding: 30px 0;'>
+        <h1 style='color: #4CAF50;'>🌿 Vitiligo Lifestyle & Diet Tracker</h1>
+        <p style='font-size: 18px; color: #555;'>Track your daily habits, food, sunlight, and emotions.</p>
+        <img src='https://cdn.pixabay.com/photo/2017/09/15/13/28/leaves-2757525_960_720.png' width='250'/>
+        <hr style='margin-top: 30px; border: 1px solid #ccc;'/>
     </div>
     """,
     unsafe_allow_html=True
