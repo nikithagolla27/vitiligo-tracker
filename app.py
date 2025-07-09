@@ -1,4 +1,18 @@
 import streamlit as st
+
+st.set_page_config(page_title="Vitiligo Tracker", layout="centered")
+
+st.markdown(
+    """
+    <div style="text-align:center;">
+        <h1 style="color:#4CAF50;">🌿 Vitiligo Tracker</h1>
+        <p>A simple lifestyle and diet tracker built with ❤️ using Streamlit</p>
+    </div>
+    """,
+    unsafe_allow_html=True
+)
+
+import streamlit as st
 import sqlite3
 import pandas as pd
 import datetime
